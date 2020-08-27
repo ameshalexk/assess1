@@ -2,19 +2,33 @@ const React = require('react');
 
 class Index extends React.Component {
   render() {
-      const logs = this.props.logs;
+      const todos = this.props.todos;
+      const test = (e) => {
+        if(e.length > 0) {
+          return (
+
+            e.map((ele,idx)=> {
+              return ( 
+                <li key={ele._id}> {ele.todo} - {ele.done?'done':'not done'} </li>
+                )
+          })
+          )
+        } else {
+          return <h3>There are no To Dos yet!</h3>
+        }
+      }
     return (
         <div>
-            <h1>Captains Logs</h1>
-                       {logs.map((ele,idx)=> {
-                           return (<ul key={ele._id}> 
-                             <li key={ele._id}>  <a href={`/logs/${ele._id}`}> {ele.title.charAt(0).toUpperCase() + ele.title.slice(1)} </a> 
-                             </li>
-                             </ul>)
-                       })}
-                   <nav>
-    <a href="/logs/new">Create a New Log</a>
-</nav>
+          <title>Unit 2 Assessment</title>
+            <h1>To Do List</h1>
+            <ul>
+              {test(todos)}
+            </ul>
+                   <hr/>
+                   <form action="/" method="POST">
+                <input type="text" name="todo" /><br/>
+                <input type="submit" name="" value="ADD TO DO"/>
+             </form>
         </div>);
   }
 }

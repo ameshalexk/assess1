@@ -1,0 +1,30 @@
+{
+  "name": "assess1",
+  "version": "1.0.0",
+  "description": "<img src=\"https://i.imgur.com/ser5chI.png\">",
+  "main": "unit-2-assessment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameshalexk/assess1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ameshalexk/assess1/issues"
+  },
+  "homepage": "https://github.com/ameshalexk/assess1#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "mongoose": "^5.10.1",
+    "react": "^16.13.1",
+    "react-do": "^1.1.6",
+    "react-dom": "^16.13.1"
+  }
+}
