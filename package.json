@@ -1,7 +1,10 @@
 {
   "name": "assess1",
   "version": "1.0.0",
-  "description": "<img src=\"https://i.imgur.com/ser5chI.png\">",
+  "engines": {
+    "node": "14.5.0"
+  },
+  "description": "",
   "main": "unit-2-assessment.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
